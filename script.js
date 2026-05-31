@@ -311,3 +311,24 @@ document.addEventListener("DOMContentLoaded", () => {
     });
 
 });
+
+// New code
+// ===== DISABLE CUSTOM CURSOR ON TOUCH DEVICES =====
+const isTouchDevice = (
+  'ontouchstart' in window ||
+  navigator.maxTouchPoints > 0 ||
+  navigator.msMaxTouchPoints > 0
+);
+
+if (isTouchDevice) {
+  // Hide cursor elements
+  document.getElementById('cdot').style.display = 'none';
+  document.getElementById('cring').style.display = 'none';
+
+  // Restore normal cursor for whole page
+  document.body.style.cursor = 'auto';
+
+  // Fix all buttons and links
+  document.querySelectorAll('a, button, .tilt, .fbt, .igtab, .star, .sol')
+    .forEach(el => el.style.cursor = 'auto');
+}
