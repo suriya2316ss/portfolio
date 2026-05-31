@@ -868,3 +868,421 @@ video {
         font-size: .95rem;
     }
 }
+
+
+
+/*------------------------------------------New code----------------------------  */
+/* ========== MOBILE FIXES ========== */
+
+/* ===== GENERAL ===== */
+@media (max-width: 480px) {
+
+  /* HERO */
+  .hero {
+    padding: 5rem 1.2rem 2rem;
+    text-align: center;
+  }
+
+  .hname {
+    font-size: clamp(2.8rem, 14vw, 5rem);
+  }
+
+  .hsub {
+    font-size: 1rem;
+  }
+
+  .hdesc {
+    font-size: .85rem;
+    margin: 1rem auto 1.5rem;
+    text-align: center;
+  }
+
+  .hcta {
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    gap: .7rem;
+  }
+
+  .hcta .btn,
+  .hcta .btn-g {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .hso {
+    justify-content: center;
+  }
+
+  /* STATS */
+  .hstats {
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: center;
+    padding: 1.5rem 0;
+  }
+
+  .sdv {
+    display: none;
+  }
+
+  .si {
+    text-align: center;
+    min-width: 80px;
+  }
+
+  /* TICKER */
+  .ticker-item {
+    font-size: .85rem;
+  }
+
+  /* ABOUT */
+  .about-grid {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+
+  .ah {
+    font-size: 2.2rem;
+  }
+
+  .abadges {
+    justify-content: center;
+  }
+
+  /* PROFILE CARD — hide on very small */
+  .pcard {
+    display: none;
+  }
+
+  /* WHAT I DO */
+  .wid-grid {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+
+  .widc {
+    padding: 1.5rem 1.2rem;
+  }
+
+  /* SKILL BARS */
+  .sb-grid {
+    grid-template-columns: 1fr;
+    gap: 0;
+  }
+
+  /* TIMELINE */
+  .tl::before {
+    left: 14px;
+  }
+
+  .tli,
+  .tli.tr {
+    width: 100%;
+    margin-left: 0;
+    padding-left: 2.5rem;
+    padding-right: 0;
+    justify-content: flex-start;
+  }
+
+  .tli.tl2 .tld,
+  .tli.tr .tld {
+    left: 8px;
+    right: auto;
+  }
+
+  .tlc {
+    max-width: 100%;
+    padding: 1rem;
+  }
+
+  .tly {
+    font-size: 1.3rem;
+  }
+
+  /* ACHIEVEMENTS */
+  .ach-grid {
+    grid-template-columns: 1fr 1fr;
+    gap: .8rem;
+  }
+
+  .achc {
+    padding: 1.2rem;
+  }
+
+  .achn {
+    font-size: 1.5rem;
+  }
+
+  /* INTERESTS */
+  .int-grid {
+    grid-template-columns: 1fr 1fr;
+    gap: .8rem;
+  }
+
+  .intc {
+    padding: 1.2rem 1rem;
+  }
+
+  /* CTA STRIP */
+  .cta-strip {
+    padding: 1.8rem 1.2rem;
+  }
+
+  .ctac {
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+  }
+
+  .ctaa {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .ctaa .btn,
+  .ctaa .btn-g {
+    width: 100%;
+    justify-content: center;
+  }
+
+  /* ===== SKILLS PAGE ===== */
+  .skgrid {
+    grid-template-columns: 1fr;
+  }
+
+  .pgrid {
+    grid-template-columns: 1fr;
+  }
+
+  .pimg {
+    height: 130px;
+  }
+
+  /* INTERNSHIP */
+  .internwrap {
+    grid-template-columns: 1fr;
+  }
+
+  .interncard {
+    padding: 1.2rem;
+  }
+
+  /* ===== EDITING PAGE ===== */
+  .ehero {
+    grid-template-columns: 1fr;
+    padding: 1.4rem;
+    gap: 1.5rem;
+  }
+
+  .escr {
+    display: none; /* hide editor UI on mobile */
+  }
+
+  .ecards {
+    grid-template-columns: 1fr 1fr;
+    gap: .8rem;
+  }
+
+  .ecard {
+    padding: 1.2rem 1rem;
+  }
+
+  /* VIDEO GRID */
+  .vgrid {
+    grid-template-columns: 1fr;
+  }
+
+  .vth {
+    height: 200px !important;
+  }
+
+  .vth iframe {
+    height: 200px !important;
+  }
+
+  /* ===== INSTAGRAM PAGE ===== */
+  .ig-tabs {
+    flex-direction: column;
+    gap: .3rem;
+  }
+
+  .igtab {
+    padding: .7rem 1rem;
+    font-size: .75rem;
+  }
+
+  .ig-profile {
+    grid-template-columns: 1fr;
+    padding: 1.4rem;
+    text-align: center;
+    gap: 1.2rem;
+  }
+
+  .ig-av {
+    margin: 0 auto;
+  }
+
+  .ig-stats {
+    justify-content: center;
+    gap: 1.5rem;
+  }
+
+  .ig-bio {
+    text-align: left;
+    font-size: .82rem;
+  }
+
+  .ig-actions {
+    justify-content: center;
+  }
+
+  .ig-highlights {
+    gap: 1rem;
+    padding: 1rem 0;
+  }
+
+  .igh-ring {
+    width: 56px;
+    height: 56px;
+  }
+
+  .igh-inner {
+    width: 50px;
+    height: 50px;
+    font-size: 1.3rem;
+  }
+
+  /* ===== YOUTUBE PAGE ===== */
+  .ytcats {
+    grid-template-columns: 1fr 1fr;
+    gap: .7rem;
+  }
+
+  .ytcat {
+    padding: .7rem;
+    flex-direction: column;
+    text-align: center;
+    gap: .5rem;
+  }
+
+  .yctm {
+    width: 38px;
+    height: 38px;
+    font-size: 1.1rem;
+  }
+
+  .ytbanner {
+    height: 130px;
+  }
+
+  .ytci {
+    flex-wrap: wrap;
+    gap: .7rem;
+  }
+
+  .ytsbtn {
+    margin: 0 auto;
+  }
+
+  /* ===== CONTACT PAGE ===== */
+  .wid-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .rlayout {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+
+  .rfw {
+    position: static;
+    padding: 1.4rem;
+  }
+
+  .stars {
+    justify-content: center;
+  }
+
+  .rstat {
+    margin-top: 1rem;
+  }
+
+  .rbig {
+    padding: 1rem 1.2rem;
+  }
+
+  .rnum {
+    font-size: 2.5rem;
+  }
+
+  /* ===== FOOTER ===== */
+  .flinks {
+    gap: .4rem .9rem;
+  }
+
+  /* ===== INNER PADDING ===== */
+  .inner {
+    padding: 2rem 1rem 4rem;
+  }
+
+  /* ===== SECTION TITLES ===== */
+  .stitle {
+    font-size: clamp(1.9rem, 8vw, 3rem);
+  }
+
+  /* ===== BUTTONS ===== */
+  .btn,
+  .btn-g {
+    padding: .75rem 1.4rem;
+    font-size: .8rem;
+  }
+}
+
+
+/* Already in your CSS — make sure this exists */
+@media(max-width:768px){
+  .nlinks{
+    display:none;
+    flex-direction:column;
+    position:absolute;
+    top:100%;
+    left:0;
+    right:0;
+    background:var(--bg);
+    border-bottom:1px solid var(--bdr);
+    padding:1rem 1.5rem;  /* ← add padding */
+    gap:.3rem;             /* ← tighter gap */
+    z-index:100;           /* ← stays on top */
+  }
+  .nlinks.open{display:flex}
+  .ntog{display:flex}
+}
+
+/* ===== TOUCH DEVICE — RESTORE CURSOR ===== */
+@media (hover: none) and (pointer: coarse) {
+  /* This targets touch screens only */
+
+  body {
+    cursor: auto !important;
+  }
+
+  #cdot,
+  #cring {
+    display: none !important;
+  }
+
+  a, button, .tilt, .fbt,
+  .igtab, .star, .sol,
+  .iggt, select, input,
+  textarea, .bsub, .pb,
+  .ig-follow, .ig-msg,
+  .ytsbtn, .ntog {
+    cursor: pointer !important;
+  }
+
+  /* Remove cursor:none from all elements */
+  * {
+    cursor: auto;
+  }
+}
